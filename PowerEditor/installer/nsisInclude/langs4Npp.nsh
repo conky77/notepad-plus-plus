@@ -289,6 +289,9 @@ SectionGroup "Localization" localization
         ${MementoUnselectedSection} "Zulu" zulu
 		CopyFiles "$PLUGINSDIR\nppLocalization\zulu.xml" "$INSTDIR\localization\zulu.xml"
 	${MementoSectionEnd}
+    ${MementoUnselectedSection} "Venetan" venetan
+		CopyFiles "$PLUGINSDIR\nppLocalization\venetan.xml" "$INSTDIR\localization\venetan.xml"
+	${MementoSectionEnd}
 SectionGroupEnd
 
 SectionGroup un.localization
@@ -553,4 +556,7 @@ SectionGroup un.localization
         Section un.zulu
 		Delete "$INSTDIR\localization\zulu.xml"
 	SectionEnd
+    	Section un.venetan
+		Delete "$INSTDIR\localization\venetan.xml"
+	SectionEnd	
 SectionGroupEnd
